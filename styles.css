@@ -1,0 +1,116 @@
+/*
+	Lesson 8 CSS
+	============
+	Carlos Valenciano
+	January 12, 2021
+*/
+
+/* simple css reset*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: #333;
+	color: #222;
+	font-family: Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+#container {
+	background: white;
+	width: 500px;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+h1 {
+	margin: 0 0 20px;
+}
+
+p{
+	margin: 10px 0;
+}
+/*Styling Links*/
+
+
+/* This selects an unvisited link*/
+a:link {
+	color: #f42aa6;
+	text-decoration: none;
+
+}
+
+/*visited links*/
+a:visited {
+	color: #f42aa6;
+
+}
+
+/*mouse over link*/
+a:hover {
+	color: #a50578;
+	text-decoration: underline;
+}
+
+/*active link*/
+a:active{
+	color: #000;
+}
+
+/* Specific Link Styles */
+
+#link-1:hover{
+	background: #333;
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+
+}
+
+#link-3 {
+	background: #f42aa6;
+	color: white;
+	padding: 5px;
+
+}
+
+#link-3:hover{
+	background: #a50578;
+	text-decoration: none;
+}
+
+#link-4:hover{
+	color: #333;
+}
+
+/*CSS Positioning*/
+#container{
+	position: relative;
+}
+
+.box{
+	background: #db4e4e;
+	color: white;
+	height: 150px;
+	width: 150px;
+	margin: 20px 0;
+}
+
+#relative-box{ /* relative positioned elements move around based on the 
+	normal flow of the document. That way the HTML knows 
+	that its still there it just 'moves' from where it was positioned before*/
+	position: relative;
+	bottom: 10px;
+	right: 0px;
+
+}
+
+#absolute-box{ /* The absolute positioned elements will move in 
+ reference to the body unless you specify an element like the
+ #container above.*/
+	position: absolute;
+	top: 0;
+	right: 0;
+}
